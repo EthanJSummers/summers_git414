@@ -91,7 +91,101 @@ html{
 	}
 
 	#advert{
+		background-image: url('images/hero.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 100px;
+		vertical-align: bottom;
+		padding: 0 0 5% 0;
+	}
+	#advert h2{
+		color: var(--yellow);
+		padding-top: 33%;
+		margin: 0 2% 0 2%;
+		align-self: flex-end;
+		flex: 100%;
+	}
 
+	#advert p{
+		color: #ffffff;
+		margin: 0 2% 5% 2%;
+		align-self: flex-end;
+	}
+
+	.linkBtn{
+		margin: auto;
+		padding: 2% 2% 2% 2%;
+		width: 50%;
+		background-color: var(--blue);
+		color: #ffffff;
+		text-align: center;
+		align-self: flex-end;
+		display: block;
+	}
+
+	#shop{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		/* grid-template-rows: 100px 100px; */
+		grid-template-areas:
+		"a a"
+		"b c"
+		"d e"
+		"f g"
+		"h h";
+	}
+
+	#shop img{
+		border-radius: 10%;
+		max-height: 67px;
+	}
+
+	#shop figcaption{
+		color: var(--blue);
+		margin-bottom: 10px;
+	}
+
+	#shop h2{
+		grid-area: a;
+		text-align: center;
+		padding-bottom: 2%;
+	}
+
+	#one{
+		grid-area: b;
+		text-align: center;
+	}
+
+	#two{
+		grid-area: c;
+		text-align: center;
+	}
+
+	#three{
+		grid-area: d;
+		text-align: center;
+	}
+
+	#four{
+		grid-area: e;
+		text-align: center;
+	}
+
+	#five{
+		grid-area: f;
+		text-align: center;
+	}
+
+	#six{
+		grid-area: g;
+		text-align: center;
+	}
+
+	#shop .linkBtn{
+		grid-area: h;
+		text-align: center;
 	}
 }
 
