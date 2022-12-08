@@ -106,6 +106,7 @@ html{
 		margin: 0 2% 0 2%;
 		align-self: flex-end;
 		flex: 100%;
+		max-width: 100px;
 	}
 
 	#advert p{
@@ -186,6 +187,10 @@ html{
 	#shop .linkBtn{
 		grid-area: h;
 		text-align: center;
+	}
+
+	#coupons{
+		
 	}
 }
 
