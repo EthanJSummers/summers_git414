@@ -56,6 +56,7 @@ table {
 	--yellow: #BF9004;
 	--brown: #73532D;
 	--red: #A64037;
+	--gray: #bebebe;
 }
 
 html{
@@ -63,6 +64,9 @@ html{
 }
 
 @media only screen and (max-width: 600px){
+	header{
+		background-color: var(--gray);
+	}
 	nav{
 		display: flex;
 	}
@@ -190,14 +194,126 @@ html{
 	}
 
 	#coupons{
-		
+		text-align: center;
+	}
+
+	#coupons figure{
+		/* background-color: var(--yellow); */
+		margin: auto;
+		border-style: dashed;
+		border-color: var(--green);
+		border-width: 2px;
+		max-width: 360px;
+		height: 200px;
+	}
+
+	#coupons figcaption{
+		display: block;
+		float: left;
+		position: relative;
+		color: var(--green);
+		top: 10px;
+		left: 10px;
+		z-index: 1;
+	}
+
+	#coupons img{
+		z-index: 0;
+		position: relative;
+		right: 8%;
+	}
+
+	#coupons h2, form h2{
+		margin: 2% 0 2% 0;
+	}
+
+	.prod{
+		display: inline;
+		float: right;
+		width: 50%;
+	}
+
+	.exp{
+		display: inline;
+		float: right;
+		width: 50%;
+	}
+
+	form{
+		max-width: 500px;
+		margin: 0 auto;
+		display: block;
+		text-align: center;
+		align-content: center;
+	}
+
+	label{
+		display: inline-block;
+		width: 75%;
+		margin: auto;
+	}
+
+	input{
+		margin-bottom: 10px;
+	}
+
+	.req{
+		color: var(--red);
+	}
+
+	input[type="submit"]{
+
+	}
+
+	footer{
+		background-color: var(--gray);
+	}
+
+	footer h2{
+		margin-bottom: 10px;
+		padding-left: 2%;
+	}
+
+	address{
+		margin-bottom: 10px;
+		padding-left: 2%;
+	}
+
+	small{
+		display: block;
+		padding-left: 2%;
+	}
+
+	#socials{
+		margin-top: 2%;
+		text-align: center;
 	}
 }
 
 @media only screen and (min-width: 800px){
+	#advert{
+		background-image: url('images/hero.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 100px;
+		vertical-align: bottom;
+		padding: 0 0 5% 0;
+	}
 
 }
 
 @media only screen and (min-width: 1000px){
+	#advert{
+		background-image: url('images/hero.jpg');
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 100px;
+		vertical-align: bottom;
+		padding: 0 0 5% 0;
+	}
 
 }
