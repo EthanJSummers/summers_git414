@@ -124,6 +124,52 @@ nav{
 	display: block;
 }
 
+footer{
+	background-color: var(--gray);
+}
+
+footer h2{
+	margin-bottom: 10px;
+	padding-left: 2%;
+}
+
+address{
+	margin-bottom: 10px;
+	padding-left: 2%;
+}
+
+small{
+	display: block;
+	padding-left: 2%;
+}
+
+#socials{
+	margin-top: 2%;
+	text-align: center;
+}
+
+form{
+	max-width: 500px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	align-content: center;
+}
+
+label{
+	display: inline-block;
+	width: 75%;
+	margin: auto;
+}
+
+input{
+	margin-bottom: 10px;
+}
+
+.req{
+	color: var(--red);
+}
+
 @media only screen and (max-width: 600px){
 	nav h1{
 		flex: 80%;
@@ -245,55 +291,13 @@ nav{
 		padding-bottom: 2%;
 	}
 
-	form{
-		max-width: 500px;
-		margin: 0 auto;
-		display: block;
-		text-align: center;
-		align-content: center;
-	}
-
-	label{
-		display: inline-block;
-		width: 75%;
-		margin: auto;
-	}
-
-	input{
-		margin-bottom: 10px;
-	}
-
-	.req{
-		color: var(--red);
-	}
-
 	input[type="submit"]{
 
 	}
 
-	footer{
-		background-color: var(--gray);
-	}
 
-	footer h2{
-		margin-bottom: 10px;
-		padding-left: 2%;
-	}
 
-	address{
-		margin-bottom: 10px;
-		padding-left: 2%;
-	}
 
-	small{
-		display: block;
-		padding-left: 2%;
-	}
-
-	#socials{
-		margin-top: 2%;
-		text-align: center;
-	}
 }
 
 @media only screen and (min-width: 600px){
@@ -324,7 +328,7 @@ nav{
 
 	h2{
 		font-weight: 800;
-		font-size: 1.5em;
+		font-size: 1.75em;
 		color: var(--red);
 	}
 
@@ -364,7 +368,73 @@ nav{
 		border-radius: 10px;
 	}
 
+	#shop figcaption{
+		padding-bottom: 10px;
+		font-size: 20px;
+	}
+
+	#shop .linkBtn{
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
+	#coupons{
+		text-align: center;
+	}
+
+	#coupons figure{
+		/* background-color: var(--yellow); */
+		margin: auto;
+		border-style: dashed;
+		border-color: var(--green);
+		border-width: 2px;
+		max-width: 500px;
+		height: 300px;
+	}
+
+	#coupons figcaption{
+		display: block;
+		float: left;
+		position: relative;
+		color: var(--green);
+		top: 10px;
+		left: 10px;
+		z-index: 1;
+	}
+
+	#coupons img{
+		z-index: 0;
+		position: relative;
+		right: 5%;
+		height: 300px;
+		width: 300px;
+	}
+
+	#coupons h2, form h2{
+		margin: 2% 0 2% 0;
+	}
+
+	.prod{
+		display: inline;
+		float: right;
+		width: 50%;
+	}
+
+	.exp{
+		display: inline;
+		float: right;
+		width: 50%;
+	}
+
+	.desc{
+		padding-bottom: 2%;
+	}
+
+	label{
+		padding-bottom: 5px;
+	}
 }
+
 
 @media only screen and (min-width: 1000px){
 	#advert{
