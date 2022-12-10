@@ -61,6 +61,7 @@ table {
 
 html{
 	font-family: 'Public Sans', sans-serif;
+	background-color: #ebebeb;
 }
 
 header{
@@ -122,6 +123,7 @@ nav{
 	text-align: center;
 	align-self: flex-end;
 	display: block;
+	cursor: pointer;
 }
 
 footer{
@@ -136,16 +138,6 @@ footer h2{
 address{
 	margin-bottom: 10px;
 	padding-left: 2%;
-}
-
-small{
-	display: block;
-	padding-left: 2%;
-}
-
-#socials{
-	margin-top: 2%;
-	text-align: center;
 }
 
 form{
@@ -170,6 +162,33 @@ input{
 	color: var(--red);
 }
 
+input[type="submit"]{
+	background-color: var(--blue);
+	color: #ffffff;
+	border-style: none;
+	border-radius: 10px;
+	padding: 1% 0 1% 0;
+	width: 20%;
+	cursor: pointer;
+}
+
+.snip{
+	display: flex;
+	margin: auto;
+	background-color: #ffffff;
+	border: var(--blue) 2px solid;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	cursor: pointer;
+}
+
+.snip p{
+	margin-top: auto;
+	margin-bottom: auto;
+	color: var(--blue);
+	font-size: 1.25em;
+}
+
 @media only screen and (max-width: 600px){
 	nav h1{
 		flex: 80%;
@@ -178,6 +197,10 @@ input{
 		color: var(--red);
 		margin: auto;
 		padding-left: 2%;
+	}
+
+	#navList{
+		display: none;
 	}
 
 	#cart, #navMenu{
@@ -195,7 +218,11 @@ input{
 	}
 
 	#advert{
-		background-image: url('images/hero.jpg');
+		background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ), url('images/hero.jpg');
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -275,6 +302,10 @@ input{
 		margin: 2% 0 2% 0;
 	}
 
+	.snip{
+		width: 15%;
+	}
+
 	.prod{
 		display: inline;
 		float: right;
@@ -291,10 +322,15 @@ input{
 		padding-bottom: 2%;
 	}
 
-	input[type="submit"]{
-
+	small{
+		display: block;
+		padding-left: 2%;
 	}
 
+	#socials{
+		margin-top: 2%;
+		text-align: center;
+	}
 
 
 
@@ -302,7 +338,11 @@ input{
 
 @media only screen and (min-width: 600px){
 	#advert{
-		background-image: url('images/hero.jpg');
+		background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ), url('images/hero.jpg');
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -311,6 +351,10 @@ input{
 		max-height: 200px;
 		vertical-align: bottom;
 		padding: 0 0 5% 0;
+	}
+
+	#navList{
+		display: none;
 	}
 
 	nav h1{
@@ -414,6 +458,10 @@ input{
 		margin: 2% 0 2% 0;
 	}
 
+	.snip{
+		width: 15%;
+	}
+
 	.prod{
 		display: inline;
 		float: right;
@@ -433,19 +481,110 @@ input{
 	label{
 		padding-bottom: 5px;
 	}
+
+	small{
+		display: inline;
+		padding-left: 2%;
+	}
+
+	#socials{
+		text-align: center;
+		height: 36px;
+		margin-top: 5.5%;
+		flex: 22%;
+	}
+
+	#siteMap{
+		flex: 78%;
+	}
+
+	footer{
+		display: flex;
+	}
 }
 
 
 @media only screen and (min-width: 1000px){
+	header{
+		font-size: 1.5em;
+	}
+
+	#navMenu{
+		display: none;
+	}
+
+	#cart{
+		flex: 10%;
+		margin-top: auto;
+		margin-bottom: auto;
+		cursor: pointer;
+	}
+
+	nav h1{
+		flex: 30%;
+		font-weight: 800;
+		font-size: 2em;
+		color: var(--red);
+		margin: auto;
+		padding-left: 2%;
+	}
+
+	h2{
+		font-weight: 800;
+		font-size: 2.5em;
+		color: var(--red);
+	}
+
+	#navList{
+		flex: 80%;
+		text-align: center;
+		display: inline;
+	}
+
+	ul{
+		margin: auto;
+	}
+
+	ul li{
+		display: inline;
+		font-size: 1.25em;
+		margin: 0 10px 0 10px;
+	}
+
+	li a:hover{
+		color: #ffffff;
+	}
+
+	li a{
+		color: var(--blue);
+		text-decoration: none;
+	}
+
 	#advert{
-		background-image: url('images/hero.jpg');
+		background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ), url('images/hero.jpg');
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		min-height: 100px;
+		min-height: 400px;
 		vertical-align: bottom;
 		padding: 0 0 5% 0;
+		font-size: 1.75em;
+	}
+
+	.linkBtn{
+		margin: auto;
+		padding: 1% 1% 1% 1%;
+		font-size: 1.25em;
+		width: 50%;
+	}
+
+	.snip{
+		width: 10%;
 	}
 
 }
