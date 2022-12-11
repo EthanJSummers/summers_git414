@@ -211,6 +211,12 @@ input[type="submit"]{
 	color: var(--yellow);
 }
 
+.prod, .exp{
+	color: var(--red);
+}
+
+
+
 .prodExp{
 	display: flex;
 	margin: auto;
