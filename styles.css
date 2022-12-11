@@ -126,6 +126,10 @@ nav{
 	cursor: pointer;
 }
 
+.linkBtn span:hover{
+	color: var(--yellow);
+}
+
 footer{
 	background-color: var(--gray);
 }
@@ -207,14 +211,13 @@ input[type="submit"]{
 	color: var(--yellow);
 }
 
-.linkBtn:hover{
+/* .linkBtn:hover{
 	color: var(--yellow);
-}
+} */
 
 .prod, .exp{
 	color: var(--red);
 }
-
 
 
 .prodExp{
@@ -307,7 +310,7 @@ input[type="submit"]{
 		/* background-color: var(--yellow); */
 		margin: auto;
 		border-style: dashed;
-		border-color: var(--green);
+		border-color: black;
 		border-width: 2px;
 		max-width: 360px;
 		height: 200px;
@@ -335,6 +338,11 @@ input[type="submit"]{
 
 	.snip{
 		width: 25%;
+	}
+
+	.snip svg{
+		height: 36px;
+		width: 36px;
 	}
 
 	.prod{
@@ -461,7 +469,7 @@ input[type="submit"]{
 		/* background-color: var(--yellow); */
 		margin: auto;
 		border-style: dashed;
-		border-color: var(--green);
+		border-color: black;
 		border-width: 2px;
 		max-width: 500px;
 		height: 300px;
