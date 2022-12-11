@@ -182,11 +182,39 @@ input[type="submit"]{
 	cursor: pointer;
 }
 
+.snip:hover{
+	background-color: var(--green);
+}
+
 .snip p{
 	margin-top: auto;
 	margin-bottom: auto;
 	color: var(--blue);
 	font-size: 1.25em;
+}
+
+#socials svg{
+	cursor: pointer;
+}
+
+#shop figcaption{
+	color: var(--blue);
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#shop figcaption:hover{
+	color: var(--yellow);
+}
+
+.linkBtn:hover{
+	color: var(--yellow);
+}
+
+.prodExp{
+	display: flex;
+	margin: auto;
+	max-width: 500px;
 }
 
 @media only screen and (max-width: 600px){
@@ -263,10 +291,7 @@ input[type="submit"]{
 		max-height: 67px;
 	}
 
-	#shop figcaption{
-		color: var(--blue);
-		margin-bottom: 10px;
-	}
+
 
 	#coupons{
 		text-align: center;
@@ -303,7 +328,7 @@ input[type="submit"]{
 	}
 
 	.snip{
-		width: 15%;
+		width: 25%;
 	}
 
 	.prod{
@@ -547,8 +572,8 @@ input[type="submit"]{
 
 	ul li{
 		display: inline;
-		font-size: 1.25em;
-		margin: 0 10px 0 10px;
+		font-size: 1em;
+		margin: 0 15px 0 15px;
 	}
 
 	li a:hover{
@@ -582,9 +607,108 @@ input[type="submit"]{
 		font-size: 1.25em;
 		width: 50%;
 	}
-
-	.snip{
-		width: 10%;
+	
+	#coupons{
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		max-width: 1000px;
 	}
 
+	#coupons h2{
+		grid-column: 1/3;
+		grid-row: 1;
+	}
+
+	#coupons .linkBtn{
+		grid-column: 1/3;
+		grid-row: 4;
+	}
+
+	.snip{
+		width: 20%;
+	}
+
+
+
+	.prod{
+		display: inline;
+		flex: 50%;
+	}
+
+	.exp{
+		display: inline;
+		flex: 50%;
+	}
+
+	form{
+		margin-top: 2%;
+		margin-bottom: 2%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 1000px;
+	}
+
+	form h2{
+		grid-column: 1/4;
+		grid-row: 1;
+	}
+
+	label{
+		font-size: 1.25em;
+		max-width: 15%;
+	}
+
+	input{
+		margin-bottom: 10px;
+		height: 30px;
+	}
+
+	input[type="submit"]{
+		margin: auto;
+		grid-column: 1/4;
+		grid-row: 4;
+		height: 50px;
+		margin-top: 2%;
+		font-size: 1.25em;
+	}
+
+	input[type="submit"]:hover{
+		color: var(--yellow);
+	}
+
+	label{
+		grid-row: 2;
+	}
+
+	input[type="text"], input[type="email"]{
+		grid-row: 3;
+		width: 250px;
+		margin: auto;
+	}
+
+	.snip p{
+		margin: auto;
+		color: var(--blue);
+		font-size: 1.25em;
+	}
+
+	#socials{
+		text-align: end;
+		height: 36px;
+		margin-right: 2%;
+		margin-top: auto;
+		flex: 22%;
+	}
+
+	#socials svg{
+		height: 40px;
+		width: 40px;
+	}
+
+	footer{
+		padding-bottom: 8px;
+	}
 }
